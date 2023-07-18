@@ -8,19 +8,29 @@
     android:padding="24dp"
     tools:context=".fragments.HomeFragment">
 
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="190dp"
         app:cardCornerRadius="20dp">
 
         <ImageView
+            android:id="@+id/sliderImage"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
             android:src = "@drawable/categories_jpg"
             />
     </com.google.android.material.card.MaterialCardView>
-    
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_marginTop="36dp"
@@ -43,7 +53,7 @@
             android:text="See All "
             />
     </RelativeLayout>
-    
+
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -85,6 +95,9 @@
         android:id="@+id/productRecycler"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 
 
 
