@@ -51,8 +51,8 @@ class MainActivity : AppCompatActivity() {
                 arguments: Bundle?
             ) {
                 title = when(destination.id){
-                    R.id.cartFragment -> "My Cart"
-                    R.id.moreFragment -> "My Dashboard"
+                    R.id.cartFragment -> "Cart"
+                    R.id.moreFragment -> "Dashboard"
                     else -> "Home"
                 }
             }
